@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   
   def current_user
     if session[:name]
-      "hi, #{session[:name]}"
+      redirect_to '/home'
     else
       return nil
     end
