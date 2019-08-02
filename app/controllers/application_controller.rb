@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
     if session[:name]
       redirect_to '/home'
     else
-      return nil
+      redirect_to '/login'
     end
   end
 end
